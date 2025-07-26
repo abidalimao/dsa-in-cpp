@@ -1,0 +1,26 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "ninja-default",
+            "displayName": "Ninja Configure Settings",
+            "description": "Sets Ninja generator and build directory",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "gcc",
+                "CMAKE_CXX_COMPILER": "g++",
+                "CMAKE_BUILD_TYPE": "Debug"
+            },
+            "environment": {
+                "PATH": "$penv{PATH};C:/Users/dell/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "ninja-default",
+            "configurePreset": "ninja-default"
+        }
+    ]
+}
